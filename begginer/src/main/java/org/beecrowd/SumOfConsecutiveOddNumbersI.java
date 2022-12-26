@@ -23,7 +23,10 @@ public class SumOfConsecutiveOddNumbersI {
 
         int sum = 0;
 
-        for (int i = Math.min(x, y) + 1; i < Math.max(x, y); i++){
+        var min = Math.min(x, y) + 1;
+        var max =  Math.max(x, y);
+
+        for (int i = min; i < max; i++){
 
             if(i % 2 != 0){
                 sum = sum + i;
